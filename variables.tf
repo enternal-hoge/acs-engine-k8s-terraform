@@ -15,18 +15,18 @@ variable "azure_tenant_id" {
 }
 
 variable "azure_location" {
-  description = "Azure Location, e.g. North Europe"
-  default = "North Europe"
+  description = "Azure Location, e.g. Japan West"
+  default = "Japan West"
 }
 
 variable "resource_group_name" {
   description = "Azure Resource Group Name"
-  default = "k8sexample"
+  default = "k8s_hoge"
 }
 
 variable "virtualnetworkname" {
   description = "Name of the virtual network"
-  default = "k8sexample_vnet"
+  default = "k8s_hoge_vnet"
 }
 
 variable "cidr" {
@@ -84,5 +84,5 @@ variable "ssh_key" {
 
 variable "cluster_name" {
   description = "Name of the K8s cluster"
-  default = "k8sexample-cluster"
+  default = "k8s_hoge-cluster"
 }
