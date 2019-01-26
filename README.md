@@ -61,7 +61,7 @@ Wait until the nginx service has been given an external (public) IP.  In the bac
 The lazy way to delete the setup when you are done is run:
 
 ```bash
-$ az group delete --name "k8sexample"
+$ az group delete --name "k8s_hoge"
 ```
 
 You can't just run `terraform apply -var-file="k8s.tfvars"` unfortunately, because the setup of the K8s cluster via the ACS Engine is a bit of a hack at the moment.  Also, you might be best to manually delete `k8s_rendered.json` and the `_output` directory between runs.  If Terraform messes up then also delete the `terraform.tfstate`/`terraform.tfstate.backup` files.
